@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Join multiline text</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
+  </head>
+
+  <body>
+
+    <div class="header">
+      <h1>Process and combine multi-line text into a single line</h1>
+    </div>
+
+    <form method="POST" class="myform">
+
+      <div class="side-input">
+        <label for="textbox-input">Input text:</label>
+        <!-- <span><input id="textbox-input" name="text"></span> -->
+        <textarea id="textbox-input" name="text" cols="40" rows="5"></textarea>
+        <button>Submit</button>
+      </div>
+
+
+      <div class="side-options">
+        <label><i>Before combining lines:</i></label>
+        <br>
+        <input type="checkbox" id="checkbox-blank" name="ignore-blank-lines" checked/>
+        <label for="checkbox-blank" class="options-label1">Ignore blank lines</label>
+        <br>
+        <input type="checkbox" id="checkbox-trailing" name="ignore-trailing-spaces" checked/>
+        <label for="checkbox-trailing" class="options-label1">Ignore trailing spaces</label>
+        <br>
+        <input type="checkbox" id="checkbox-leading" name="ignore-leading-spaces" checked/>
+        <label for="checkbox-leading" class="options-label1">Ignore leading spaces</label>
+        <br>
+        <input id="textbox-rm-start" name="rm-start" type="number" value="0" style="width:40px"/>
+        <label for="textbox-rm-start" class="options-label2">Remove this many characters from the <b>start</b> of each line.</label>
+        <br>
+        <input id="textbox-rm-end" name="rm-end" type="number" value="0" style="width:40px"/>
+        <label for="textbox-rm-end" class="options-label2">Remove this many characters from the <b>end</b> of each line.</label>
+        <br>
+        <input id="textbox-delimiter" name="delimiter" style="width:40px"/>
+        <label for="textbox-delimiter" class="options-label2">Insert character(s) between each line before combining.<br>Leave empty for no delimiter.</label>
+      </div>
+    
+    </form>
+
+  </body>
+</html>
+
+

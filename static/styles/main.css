@@ -1,0 +1,82 @@
+
+.header {
+  background-color: #1abc9c;
+  color: white;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-top: 0.015px;
+  padding-bottom: 0.012px;
+  margin-top: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.myform {
+  display: grid;
+  grid-template-areas: 
+    "inputArea optionsArea"
+    "buttonArea ...";
+  grid-template-rows: 2.4fr 0.3fr;
+  grid-template-columns: 1.2fr 1fr;
+  grid-gap: .8em;
+  background: #eee;
+  padding: 1.5em;
+}
+
+.side-input {
+  grid-area: inputArea;
+  width: 100%;
+  padding: 1.1em;
+  margin-bottom: 1em;
+}
+
+.side-options {
+  grid-area: optionsArea;
+  width: 100%;
+  padding: 1.1em;
+  margin-bottom: 1em;
+}
+
+.myform button {
+  grid-area: buttonArea;
+  border: 0;
+  background: gray;
+  color: white;
+  float: right;
+  margin: 0.7em;
+  padding: 0.7em;
+}
+
+#textbox-input {
+  width: 98.5%;
+  height: 260px;
+}
+
+.options-label1 {
+  margin-left: 6px;
+}
+
+.options-label2 {
+  margin-left: 10px;
+}
+
+#textbox-delimiter {
+  vertical-align: -8px;
+}
+
+span {
+  display: block;
+  overflow: hidden;
+  padding-right:10px;
+}
+
+label, input {
+  display: inline-block;
+}
+
+label {
+  margin-bottom: 20px;
+  vertical-align: top;
+}
