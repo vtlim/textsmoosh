@@ -1,5 +1,6 @@
-# test scripts
+# test scripts and inputs
 test*.py
+test*.txt
 
 # python files
 __pycache__/

@@ -28,17 +28,20 @@
         <input type="checkbox" id="checkbox-blank" name="ignore-blank-lines" checked/>
         <label for="checkbox-blank" class="options-label1">Ignore blank lines</label>
         <br>
-        <input type="checkbox" id="checkbox-trailing" name="ignore-trailing-spaces" checked/>
-        <label for="checkbox-trailing" class="options-label1">Ignore trailing spaces</label>
+        <input type="checkbox" id="checkbox-leading" name="keep-leading-spaces"/>
+        <label for="checkbox-leading" class="options-label1">Keep leading spaces</label>
         <br>
-        <input type="checkbox" id="checkbox-leading" name="ignore-leading-spaces" checked/>
-        <label for="checkbox-leading" class="options-label1">Ignore leading spaces</label>
+        <input type="checkbox" id="checkbox-trailing" name="keep-trailing-spaces"/>
+        <label for="checkbox-trailing" class="options-label1">Keep trailing spaces</label>
         <br>
-        <input id="textbox-rm-start" name="rm-start" type="number" value="0" style="width:40px"/>
+        <input id="textbox-rm-start" name="rm-start" type="number" value="0" min="0" style="width:40px"/>
         <label for="textbox-rm-start" class="options-label2">Remove this many characters from the <b>start</b> of each line.</label>
         <br>
-        <input id="textbox-rm-end" name="rm-end" type="number" value="0" style="width:40px"/>
+        <input id="textbox-rm-end" name="rm-end" type="number" value="0" min="0" style="width:40px"/>
         <label for="textbox-rm-end" class="options-label2">Remove this many characters from the <b>end</b> of each line.</label>
+        <br>
+        <input type="checkbox" id="checkbox-spaces" name="remove-all-spaces"/>
+        <label for="checkbox-spaces" class="options-label1">Remove ALL whitespace characters in each line</label>
         <br>
         <input id="textbox-delimiter" name="delimiter" style="width:40px"/>
         <label for="textbox-delimiter" class="options-label2">Insert character(s) between each line before combining.<br>Leave empty for no delimiter.</label>
