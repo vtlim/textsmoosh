@@ -1,2 +1,5 @@
 # test scripts
 test*.py
+
+# python files
+__pycache__/
