@@ -1,8 +1,9 @@
 # TextSmoosh
 
-README last updated: 20 Dec 2020
+README last updated: 21 Dec 2020
 
-**About**: Web app to process and combine multi-line text into a single line.
+**About**: Web app to process and combine multi-line text into a single line.  
+Deployed on Heroku, and accessible at: http://www.combinetext.com/
 
 ## Screenshot of web app
 
