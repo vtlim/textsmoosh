@@ -3,7 +3,8 @@
 README last updated: 21 Dec 2020
 
 **About**: Web app to process and combine multi-line text into a single line.  
-Deployed on Heroku, and accessible at: http://www.combinetext.com/
+Deployed on Heroku, and accessible at: http://www.combinetext.com/  
+See example cases in the [examples](https://github.com/vtlim/textsmoosh/tree/master/examples) folder.
 
 ## Screenshot of web app
 
